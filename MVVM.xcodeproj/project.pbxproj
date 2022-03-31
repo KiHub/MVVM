@@ -17,6 +17,7 @@
 		0BF8757527F64CEB0024AD00 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8757427F64CEB0024AD00 /* MainViewModel.swift */; };
 		0BF8757927F652760024AD00 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8757827F652760024AD00 /* TestView.swift */; };
 		0BF8757B27F652B60024AD00 /* TestView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8757A27F652B60024AD00 /* TestView + Extension.swift */; };
+		0BF8757D27F661810024AD00 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8757C27F661810024AD00 /* ModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0BF8757427F64CEB0024AD00 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		0BF8757827F652760024AD00 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		0BF8757A27F652B60024AD00 /* TestView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestView + Extension.swift"; sourceTree = "<group>"; };
+		0BF8757C27F661810024AD00 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				0BF8755B27F64A6C0024AD00 /* AppDelegate.swift */,
 				0BF8755D27F64A6C0024AD00 /* SceneDelegate.swift */,
+				0BF8757C27F661810024AD00 /* ModuleBuilder.swift */,
 				0BF8757027F64B0C0024AD00 /* MainModule */,
 				0BF8756127F64A6C0024AD00 /* Main.storyboard */,
 				0BF8756427F64A6E0024AD00 /* Assets.xcassets */,
@@ -185,6 +188,7 @@
 				0BF8757927F652760024AD00 /* TestView.swift in Sources */,
 				0BF8757527F64CEB0024AD00 /* MainViewModel.swift in Sources */,
 				0BF8756027F64A6C0024AD00 /* MainViewController.swift in Sources */,
+				0BF8757D27F661810024AD00 /* ModuleBuilder.swift in Sources */,
 				0BF8755C27F64A6C0024AD00 /* AppDelegate.swift in Sources */,
 				0BF8757327F64B910024AD00 /* ViewData.swift in Sources */,
 				0BF8755E27F64A6C0024AD00 /* SceneDelegate.swift in Sources */,
