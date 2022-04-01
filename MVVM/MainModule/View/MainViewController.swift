@@ -11,6 +11,7 @@ class MainViewController: UIViewController {
     
     private var viewModel: MainViewModelProtocol!
     private var testView: TestView!
+    let signButton = UIButton(type: .system)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,8 @@ class MainViewController: UIViewController {
         
         createView()
         updateView()
+        style()
+        layout()
         
     }
 
@@ -37,3 +40,30 @@ class MainViewController: UIViewController {
     
 }
 
+extension MainViewController {
+    private func style() {
+        signButton.translatesAutoresizingMaskIntoConstraints = false
+        signButton.configuration = .filled()
+        signButton.configuration?.imagePadding = 8
+        signButton.setTitle("Start", for: [])
+        signButton.addTarget(self, action: #selector(signInTapped), for: .primaryActionTriggered)
+    }
+    private func layout() {
+        view.addSubview(signButton)
+        NSLayoutConstraint.activate([
+            signButton.topAnchor.constraint(equalTo: view.centerYAnchor, constant: 18),
+        signButton.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 8),
+        view.trailingAnchor.constraint(equalToSystemSpacingAfter: signButton.trailingAnchor, multiplier: 8),
+        ])
+        
+    }
+
+}
+
+extension MainViewController {
+    @objc func signInTapped(sender: UIButton) {
+        viewModel.startFetch()
+        
+    }
+    
+}
